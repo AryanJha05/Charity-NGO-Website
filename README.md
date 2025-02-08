@@ -22,7 +22,7 @@ CSS3: For styling and creating a responsive layout.
 How to Use:
 Clone the repository.
 
-Open the index.html file in your browser to view the website.
+Open the home.html file in your browser to view the website.
 
 Contributions:
 Contributions are welcome! If you'd like to improve this project, feel free to open an issue or submit a pull request.
