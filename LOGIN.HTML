@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN PAGE</title>
+
+    <style>
+
+        body {
+            background-image: url('https://www.pixelstalk.net/wp-content/uploads/2016/07/Free-4k-Backgrounds-Screen-Download.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;  
+        }
+
+        #logo {
+            width: 100px;
+            height: 100px;
+            border-radius: 25px 25px;
+        }
+
+        header {
+            width: 100%;
+            height: 100px;
+            border: 2px solid black;
+            display: flex;
+            padding: 1em 0;
+            margin: 1em 0;
+            border-radius: 50px 50px;
+            background-image: linear-gradient(to left,rgb(247, 183, 66),whitesmoke,rgb(247, 186, 74));
+            box-shadow: 2px 4px 4px #ccc;
+            text-shadow: 4px 4px 10px orange;
+
+        } 
+
+        #title {
+            border-right: 2px solid black;
+            padding-top: 25px;
+        }
+
+        nav {
+            width: 1520PX;
+            border-radius: 0px 25px 25px 0px;
+            border-width: 2px;
+            font-size: xx-large;
+            font-weight: bolder;
+            text-align: center;
+            border-bottom-style: solid ;
+            border-top-style: solid;
+            border-right-style: solid;
+            padding-top: 30px;
+        }
+        
+        input {
+            border-radius: 50px 50px;
+            text-align: center;
+            font-size: large;
+        }
+        
+        DIV FORM {
+            background-image: linear-gradient(to left,whitesmoke,rgb(247, 186, 74),whitesmoke);
+            font-size: large;
+            width: 500px;
+            height: 400px;
+            justify-content: center;
+            align-content: center;
+            border: 2px solid black;
+            border-radius: 50px 50px;
+            padding-top: 10px;
+        }
+
+        div form  .logo {
+            border-radius: 50% ;
+            width: 40px;
+            height: 45px;
+            padding-top: 5px;
+        }
+
+        #container { 
+            padding-top: 1em 0;
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+        form a {
+            text-decoration: none;
+            color: black;
+        }
+
+        label {
+            font-size: x-large;
+        }
+
+        #button {
+            padding: 10px 20px;
+            background: orange;
+            color: white;
+            border: none;
+            box-shadow: 4px 4px 8px black;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        #button:hover {
+            background: #005bb5;
+        }
+
+        .sign-in {
+            font-size: 25px;
+            font-weight: bolder;
+            text-align: center;
+        }
+        
+        footer {
+            border: 2px solid black;
+            border-radius: 50px 50px;
+            background-color: whitesmoke;   
+            box-shadow: 2px 2px 2px blanchedalmond inset;
+            border-top-style: none;
+            background-image: linear-gradient(to left,rgb(247, 183, 66),whitesmoke,rgb(247, 186, 74));
+            text-align: center;
+            padding: 1rem 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            margin-bottom: 10px;
+            font-size: 20PX;
+        }
+
+        #fbox {
+
+            display: inline-flex;
+        }
+
+        #fbox-inner1 a {
+
+            text-decoration: none;
+            color: black;
+            padding-right: 50px;
+        }
+
+        #fbox-inner2 {
+
+            border-left-style: solid;
+            border-width: 1px;
+            padding-left: 50px;
+        }
+        
+        #fbox .logo {
+
+            border-radius: 50px  ;
+            width: 25px;
+            height: 25px;
+            padding-bottom: 10px;
+        }
+
+        #outer {
+
+            border-bottom-style: dashed;
+            border-width: 1px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        &nbsp;&nbsp;<img src="CHARITY.png" id="logo"></img>&nbsp;
+            <h2 id="title">ORGANIZATION &nbsp;</h2>
+        <nav>
+           LOGIN PAGE
+        </nav>
+
+    </header>
+    <HR>
+    <Center>
+        <div id="container">
+
+            <form>
+                <label for="uname"><b>USERNAME :</b></label>
+                <input type="text" placeholder="Enter Username" name="uname" required>
+            <BR>
+            <BR>
+                <label for="PASS"><B>PASSWORD :</B></label>
+                <input type="password" placeholder="Password" name="PASS" required>
+            <BR>
+            <BR>
+                <label for="OTP"><B>OTP :</B></label>
+                <input type="tel" placeholder="Enter OTP" name="OTP" maxlength="7" pattern="[0-3]{3} [0-3{3}]" required>
+            <br>
+            <br>
+                <a href="home.html" target="_parent">
+                <input type="button" value="LOGIN" id="button"></a>
+            <br>
+            <br>
+                <hr>
+            <div class="sign-in">
+                Or
+                <br>
+                Sign in With
+                <br>
+
+                <span>
+                    <a href="https://r.search.yahoo.com/_ylt=Awrx.coJwKVnOAIAF8.7HAx.;_ylu=Y29sbwNzZzMEcG9zAzEEdnRpZAMEc2VjA3Ny/RV=2/RE=1740125449/RO=10/RU=https%3a%2f%2faccounts.google.com%2fLogin/RK=2/RS=qk53.ZsbyVXkTXIVLsU01dfJav4-" target="_blank">
+                        <img src="https://tse3.mm.bing.net/th?id=OIP.rC4ds-dkwjzSmdyig-1lqwHaHa&pid=Api&P=0&h=180"  alt="google"  class="logo">
+                    </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                    <a href="https://www.bing.com/ck/a?!&&p=bd9b70652c6ee4890968ffc611391fa124744ce589a6e2564c3845dd833fcc59JmltdHM9MTczODg4NjQwMA&ptn=3&ver=2&hsh=4&fclid=2b4e64f1-5fac-60bc-062a-71d65e796125&psq=facebook+login+page&u=a1aHR0cHM6Ly93d3cuZmFjZWJvb2suY29tL2xvZ2luLnBocC8_bGFuZz1lbi1VUw&ntb=1" target="_blank">
+                        <img src="https://cdn.pixabay.com/photo/2020/07/21/02/07/facebook-5424833_1280.png" alt="facebook" class="logo">
+                    </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                   
+                    <a href="https://www.bing.com/ck/a?!&&p=986f03f8077f53ba99525d46e1d4271babfd09ba76861e4e2dbb53e913cb4d29JmltdHM9MTczODg4NjQwMA&ptn=3&ver=2&hsh=4&fclid=2b4e64f1-5fac-60bc-062a-71d65e796125&psq=linkedin+login+page&u=a1aHR0cHM6Ly93d3cubGlua2VkaW4uY29tL2xvZ2lu&ntb=1" target="_blank">
+                      <img src="https://tse4.mm.bing.net/th?id=OIP.ZKu7K_oqq7FoFwKHizAZHwHaHk&pid=Api&P=0&h=180" alt="Linkedin" class="logo">
+                    </a>
+                </span>
+
+            </div>
+
+                
+            </form>
+        </DIV>
+    </Center>
+
+    <footer>
+
+        <div id="outer">
+         Made with &hearts; by 
+         <i>
+           <b>
+             ARYAN JHA
+           </b>
+         </i> 
+ 
+         <br>
+         © since 2025, AJCharity.com
+        </div>
+ 
+        <div id="fbox">
+         <div id="fbox-inner1">
+ 
+           <a href="mailto:ARYAN24006@gmail.com">
+             <br>
+             <b>Contact Me</b>
+           </a>
+         </div>
+ 
+ 
+         <div id="fbox-inner2">
+           <br>
+           <b>Follow us On</b>
+           <br>
+ 
+           <span>
+
+            <a href="https://www.instagram.com/_aryan_jha_05?igsh=cWJxbTkyODY1NXJt" target="_blank">
+              <img src="https://static.vecteezy.com/system/resources/previews/017/743/717/non_2x/instagram-icon-logo-free-png.png"  alt="Instagram"  class="logo">
+            </a>&nbsp;
+
+            <a href="https://github.com/AryanJha05" target="_blank">
+              <img src="https://www.pngmart.com/files/23/Github-Logo-PNG.png" alt="Github" class="logo">
+            </a>&nbsp;
+
+            <a href="https://www.linkedin.com/in/aryan-jha-42b511321?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
+              <img src="https://tse4.mm.bing.net/th?id=OIP.ZKu7K_oqq7FoFwKHizAZHwHaHk&pid=Api&P=0&h=180" alt="Linkedin" class="logo">
+             </a>
+
+          </span>
+ 
+         </div>
+        </div>
+         
+     </footer>
+</body>
+</html>

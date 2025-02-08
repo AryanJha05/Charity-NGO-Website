@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charity/NGO Website</title>
+
+    <style>
+        body {
+
+            background-image: url('https://www.pixelstalk.net/wp-content/uploads/2016/07/Free-4k-Backgrounds-Screen-Download.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;     
+        }
+
+        #logo {
+
+            width: 100px;
+            height: 100px;
+            border-radius: 25px 25px;
+        }
+
+        header {
+
+            width: 100%;
+            height: 100px;
+            border: 2px solid black;
+            display: flex;
+            padding: 1em 0;
+            margin: 1em 0;
+            border-radius: 50px 50px;
+            background-image: linear-gradient(to left,rgb(247, 183, 66),whitesmoke,rgb(247, 186, 74));
+            box-shadow: 2px 4px 4px #ccc;
+            text-shadow: 4px 4px 10px orange;  
+        } 
+
+        #title {
+
+            border-right: 2px solid black;
+            padding-top: 25px;
+        }
+
+        nav {
+
+            border-width: 2px;
+            border-bottom-style: solid ;
+            border-top-style: solid;
+            border-right-style: solid;
+            padding-top: 20px;
+            border-radius: 0px 25px 25px 0px;           
+        }
+
+        #donate-now {
+
+            height: 150px;
+            align-content: center;
+            margin-left: 15px;         
+        }
+
+        #donate-now img {
+
+            width: 150px;
+            height: 50px;
+            border: 2px solid black;
+            border-radius: 25px;
+            box-shadow: 2px 2px 4px black, inset;         
+        }
+
+        #donate-now {
+
+            position: relative;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float {
+
+            0% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-43.5px);
+            }
+
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+        .menu {
+
+            height: auto;
+            width: max-content;
+            margin: 10px;
+            border-width: 1px;
+            font-size: 22.5px;
+            padding: 5px;
+            font-weight: bolder;
+        }
+
+        .menu a {
+
+            text-decoration: none;
+            translate: right;
+            color: black;
+            margin-left: 150px;
+        }
+
+        .menu a:hover {
+
+            color: blue;
+            transition: ease-in-out;
+            text-decoration: underline;
+        }
+
+        .search {
+
+            margin-left: 150px;
+            border-radius: 10px;
+            text-align: center;
+            font-size: large;
+        }
+
+        button {
+
+            background-color: gold;
+            border-radius: 10px;
+            font-size: large;
+            box-shadow: 2px 2px 1px whitesmoke;
+        }
+
+        .hero {
+
+            text-align: center;
+            display: flex;
+            padding-left: 2em ;
+        }
+
+        .help {
+            
+            border-radius: 50px;
+        }
+
+        .hero h1 {
+
+            font-size: 48px;
+            margin-bottom: 10px;
+            color: black;
+            text-shadow: 4px 4px 10px orange;
+            text-decoration: underline;
+        }
+
+        .hero p {
+
+            font-size: 30px;
+            color: whitesmoke;
+            font-weight: bolder;
+            text-shadow: 4px 4px 10px orange;
+        }
+
+        section {
+
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .mission {
+
+            text-align: center;
+            display: flex;
+            padding-left: 2em ;
+        }
+        
+        #b1 {
+
+            margin-left: 100px;
+        }
+        #b2 h1 {
+
+            font-size: 48px;
+            margin-bottom: 10px;
+            color: black;
+            text-shadow: 4px 4px 10px orange;
+            text-decoration: underline;
+        }
+
+        #b2 p {
+
+            font-size: 30px;
+            color: whitesmoke;
+            font-weight: bolder;
+            text-shadow: 4px 4px 10px orange;
+        }
+
+        .mission h2 {
+
+            font-size: 48px;
+            margin-bottom: 10px;
+            color: black;
+            text-shadow: 4px 4px 10px orange;
+            text-decoration: underline;
+        }
+       
+        #gallery .gallery-grid {
+
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        #gallery .gallery-item {
+
+            width: 30%;
+            background-color: #ffffff;
+            border: 1px solid #ccc;
+            box-shadow: 2px 2px 10px black;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        #gallery .gallery-item img {
+
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 2px 2px 10px black;
+        }
+
+        #gallery .gallery-item p {
+
+            margin-top: 0px;
+            font-size: 20px;
+            color: black;
+            font-weight: bold;
+        }
+
+        #gallery h2{
+
+            font-size: 48px;
+            padding-top: 0;
+            color: black;
+            text-shadow: 4px 4px 10px orange;
+            text-decoration: underline;
+        }
+
+        #gallery .gallery-item :hover {
+            
+            transition-property: all;
+            transition-duration: 0.8S;
+            transition-timing-function: ease-in-out;
+            transition-delay: 0S;
+            transform: scale(1.05);
+            text-shadow: 4px 4px 10px orange;
+            text-decoration: underline;
+        }
+
+        DIV FORM {
+
+            background-image: linear-gradient(to left,whitesmoke,rgb(247, 186, 74),whitesmoke);
+            font-size: large;
+            width: 500px;
+            height: 400px;
+            justify-content: center;
+            align-content: center;
+            border: 2px solid black;
+            border-radius: 50px 50px;
+            padding-top: 10px
+        }
+
+        #donate {
+
+            margin-bottom: 60px;
+        }
+
+       #donate h2 {
+
+            font-size: 48px;
+            padding-top: 0;
+            color: black;
+            text-shadow: 4px 4px 10px orange;
+            text-decoration: underline;
+        }
+
+        #donate .donation-form {
+
+            max-width: 500px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        #donate .donation-form label {
+
+            font-size: larger;
+            font-weight: bold;
+        }
+
+        #donate .donation-form input {
+
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 50px;
+            text-align: center;
+        }
+
+        #donate .donation-form #button {
+
+            padding: 10px 20px;
+            background: orange;
+            color: white;
+            border: none;
+            box-shadow: 4px 4px 8px black;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        #donate .donation-form #button:hover {
+
+            background: #005bb5;
+        }
+
+        h1 {
+
+            background-image: linear-gradient(#CFE8EF 0 0);
+            background-size: 200% .08em;
+            background-position: 200% 100%;
+            background-repeat: no-repeat;
+            transition: background-size .3s, background-position .3s .3s;
+        }
+
+        h1:hover {
+
+            transition: background-size .3s .3s, background-position .3s;
+            background-size: 200% 100%;
+            background-position: 100% 100%;
+        }
+ 
+        h2 {
+            width: max-content;
+            background-image: linear-gradient(#CFE8EF 0 0);
+            background-size: 200% .08em;
+            background-position: 200% 100%;
+            background-repeat: no-repeat;
+            transition: background-size .3s, background-position .3s .3s;
+        }
+
+        .effect h2:hover {
+
+            transition: background-size .3s .3s, background-position .3s;
+            background-size: 200% 100%;
+            background-position: 100% 100%;
+        }
+
+        #upi{
+
+            width: 50px;
+            height: 50px;
+            border-radius: 50px;
+            justify-content: center;
+        }
+
+        footer {
+
+            border: 2px solid black;
+            border-radius: 50px 50px;
+            background-color: whitesmoke;   
+            box-shadow: 2px 2px 2px blanchedalmond inset;
+            border-top-style: none;
+            background-image: linear-gradient(to left,rgb(247, 183, 66),whitesmoke,rgb(247, 186, 74));
+            text-align: center;
+            padding: 1rem 0;
+            position: relative;
+            bottom: 0cm;
+            width: 100%;
+            margin-bottom: 15px;
+            font-size: 20PX;
+        }
+
+        #fbox {
+
+            display: inline-flex;
+        }
+
+        #fbox-inner1 a {
+
+            text-decoration: none;
+            color: black;
+            padding-right: 50px;
+        }
+
+        #fbox-inner2 {
+
+            border-left-style: solid;
+            border-width: 1px;
+            padding-left: 50px;
+        }
+        
+        #fbox .logo {
+
+            border-radius: 50px  ;
+            width: 25px;
+            height: 25px;
+            padding-bottom: 10px;
+        }
+
+        #outer {
+
+            border-bottom-style: dashed;
+            border-width: 1px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+
+        &nbsp;&nbsp;<img src="CHARITY.png" id="logo"></img>&nbsp;
+
+            <h2 id="title">ORGANIZATION &nbsp;</h2>
+
+        <nav>
+            <div class="menu">
+                <a href="#" style="margin-left: 0;">HOME</a>
+                <a href="LOGIN.HTML" target="_self">LOGIN</a>
+                <a href="#donate" target="_blank">DONATE</a>
+                <a href="register.html" target="_blank">REGISTER</a>
+                <input type="search" placeholder="Search.."class="search">
+                <button type="submit" >Search</button>
+            </div>
+        </nav>
+
+        <div id="donate-now">
+          <a  href="#donate">
+            <img src="https://logodix.com/logo/909372.jpg" alt="DONATE NOW">
+          </a>
+        </div>
+
+    </header>
+
+   
+    <section class="hero">
+
+        <img src="https://www.narayanseva.org/wp-content/uploads/2022/10/11-help-poor-people.jpg"  class="help">
+
+        <div id="b1">
+            <h1>Together, We Can Make a Difference</h1>
+        <br>
+        <p>Join us in our mission to create a better world for everyone.</p>
+        </div>
+
+    </section>
+    
+      <!-- Mission and Vision Section -->
+      <section  class="mission">
+
+        <div id="b2">
+
+            <div  style=" width: 100%; justify-items: center;" class="effect">
+              <h2>Our Mission and Vision</h2>
+            </div>
+
+            <p>Our mission is to provide support and resources to those in need, ensuring a brighter future for all. We envision a world where everyone has access to basic necessities and opportunities to thrive.</p>
+
+        </div>
+
+        <img src="https://worldpeacemission.net/images/miniseries-new/charity_mission21.png" style="height: 400px; width: 800px;" class="help" >
+
+      </section>
+      <hr>
+
+      <!-- Gallery -->
+      <section id="gallery">
+
+          <div style="width: 100%; justify-items: center;" class="effect">
+            <h2>Stories of Impact</h2>
+          </div>
+
+          <div class="gallery-grid">
+            <div class="gallery-item">
+              <img src="https://www.narayanseva.org/wp-content/uploads/2022/10/10-food-to-needy-1.jpg" alt="Impact Story 1" style="height: 365px;">
+              <br><br>
+              <p>Helping families in need with food supplies.</p>
+            </div>
+
+            <div class="gallery-item">
+              <img src="https://files.globalgiving.org/pfil/10113/pict_featured_jumbo.jpg?t=1625753099000" alt="Impact Story 2">
+              <br><br>
+              <p>Building schools for underprivileged children.</p>
+            </div>
+
+            <div class="gallery-item">
+              <img src="https://www.globalteer.org/wp-content/uploads/2020/04/bhjgjhfht-1.jpg" alt="Impact Story 3">
+              <br><br>
+              <p>Providing clean water to remote villages.</p>
+            </div>
+
+          </div>
+
+      </section>
+      <hr>
+
+      <div>
+          <section id="donate">
+
+            <div style="width: 100%; justify-items: center;" class="effect" >
+              <h2>Donate Now</h2>
+            </div>
+
+            <form class="donation-form">
+
+              <label for="name">Full Name</label>
+              <input type="text" id="name" placeholder="Enter your name" required><br><br>
+    
+              <label for="email">Email</label>
+              <input type="email" id="email" placeholder="Enter your email" required><br><br>
+    
+              <label for="amount">Donation Amount (₹)</label>
+              <input type="number" id="amount" placeholder="Enter amount" required><br><br>
+    
+              <input type="button" onclick="alert('THANKS FOR YOUR CONTRIBUTION')"  value="DONATE!" id="button">
+
+              <hr>
+              <br>
+                <b>
+                  OR PAY with UPI
+                </b>
+              <br>
+
+              <a href="upi.jpg" target="_blank">
+                <img src="https://cdn.zeebiz.com/sites/default/files/2024/01/03/274966-upigpay.jpg" id="upi">
+              </a>
+
+            </form>
+
+          </section>
+  
+      </div>
+   
+
+
+    <footer>
+
+       <div id="outer">
+        Made with &hearts; by 
+        <i>
+          <b>
+            ARYAN JHA
+          </b>
+        </i> 
+
+        <br>
+        © since 2025, AJCharity.com
+       </div>
+
+       <div id="fbox">
+        <div id="fbox-inner1">
+
+          <a href="mailto:ARYAN24006@gmail.com">
+            <br>
+            <b>Contact Me</b>
+          </a>
+        </div>
+
+
+        <div id="fbox-inner2">
+          <br>
+          <b>Follow us On</b>
+          <br>
+
+          <span>
+
+            <a href="https://www.instagram.com/_aryan_jha_05?igsh=cWJxbTkyODY1NXJt" target="_blank">
+              <img src="https://static.vecteezy.com/system/resources/previews/017/743/717/non_2x/instagram-icon-logo-free-png.png"  alt="Instagram"  class="logo">
+            </a>&nbsp;
+
+            <a href="https://github.com/AryanJha05" target="_blank">
+              <img src="https://www.pngmart.com/files/23/Github-Logo-PNG.png" alt="Github" class="logo">
+            </a>&nbsp;
+
+            <a href="https://www.linkedin.com/in/aryan-jha-42b511321?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
+              <img src="https://tse4.mm.bing.net/th?id=OIP.ZKu7K_oqq7FoFwKHizAZHwHaHk&pid=Api&P=0&h=180" alt="Linkedin" class="logo">
+             </a>
+
+          </span>
+
+        </div>
+       </div>
+        
+    </footer>
+
+</body>
+</html>

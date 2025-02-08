@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REGISTER page</title>
+
+    <style>
+
+        body{
+            background-image: url('https://www.pixelstalk.net/wp-content/uploads/2016/07/Free-4k-Backgrounds-Screen-Download.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;        
+        }
+
+        
+        #logo {
+            width: 100px;
+            height: 100px;
+            border-radius: 25px 25px;
+        }
+
+        header {
+            width: 100%;
+            height: 100px;
+            border: 2px solid black;
+            display: flex;
+            padding: 1em 0;
+            margin: 1em 0;
+            border-radius: 50px 50px;
+            background-image: linear-gradient(to left,rgb(247, 183, 66),whitesmoke,rgb(247, 186, 74));
+            box-shadow: 2px 4px 4px #ccc;
+            text-shadow: 4px 4px 10px orange;          
+        } 
+
+         #title {
+            border-right: 2px solid black;
+            padding-top: 25px;
+        }
+
+        nav {
+            width: 1520PX;
+            border-radius: 0px 25px 25px 0px;
+            border-width: 2px;
+            font-size: xx-large;
+            font-weight: bolder;
+            text-align: center;
+            border-bottom-style: solid ;
+            border-top-style: solid;
+            border-right-style: solid;
+            padding-top: 30px;
+   
+        }
+
+        .container {
+            margin-top: 100px;
+            margin-bottom: 100px;
+        }
+
+        legend {
+            border: 5px solid black;
+            border-radius: 50px 50px;
+            background-image: linear-gradient(to left,rgb(247, 186, 74),whitesmoke,rgb(247, 186, 74));
+        }
+
+        form {
+            font-size: large;
+            font-weight: bold;
+            justify-items: center;
+            align-items: center;
+            padding-top: 1em;
+            margin-top: 0x;
+            margin-bottom: 80px;
+
+        }
+
+        fieldset {
+            justify-items: center;
+            align-items: center;
+            font-size: x-large;
+            width: 600px;
+            height: max-content;
+            border: 5px solid black;
+            border-radius: 50px 0px;
+            background-image: linear-gradient(to left,whitesmoke,rgb(247, 186, 74),whitesmoke);
+
+        }
+
+        input {
+            border: 2px solid black;
+            border-radius: 50px 50px;
+            font-size: large;
+            text-align: center;
+        }
+
+        #button {
+            padding: 10px 20px;
+            background: orange;
+            color: white;
+            border: none;
+            box-shadow: 4px 4px 8px black;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        #button:hover {
+            background: #005bb5;
+        }
+
+
+        footer {
+            border: 2px solid black;
+            border-radius: 50px 50px;
+            background-color: whitesmoke;   
+            box-shadow: 2px 2px 2px blanchedalmond inset;
+            border-top-style: none;
+            background-image: linear-gradient(to left,rgb(247, 183, 66),whitesmoke,rgb(247, 186, 74));
+            text-align: center;
+            padding: 1rem 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            margin-bottom: 15px;
+            font-size: 20PX;
+        }
+
+        #fbox {
+
+            display: inline-flex;
+        }
+
+        #fbox-inner1 a {
+
+            text-decoration: none;
+            color: black;
+            padding-right: 50px;
+        }
+
+        #fbox-inner2 {
+
+            border-left-style: solid;
+            border-width: 1px;
+            padding-left: 50px;
+        }
+        
+        #fbox .logo {
+
+            border-radius: 50px  ;
+            width: 25px;
+            height: 25px;
+            padding-bottom: 10px;
+        }
+
+        #outer {
+
+            border-bottom-style: dashed;
+            border-width: 1px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+
+        &nbsp;&nbsp;<img src="CHARITY.png" id="logo"></img>&nbsp;
+            <h2 id="title">ORGANIZATION &nbsp;</h2>
+        <nav>
+           VOLUNTEER REGISTRATION FORM
+        </nav>
+
+    </header>
+
+    <div class="container">
+        <form>
+            <fieldset>
+             <legend> Volunteer Registration Form:</legend>
+    
+             <label for="fname">First name:</label>
+             <input type="text" placeholder="Eg.: XYZ" name="fname" required>
+             
+             <br><br>
+    
+             <label for="lname">Last name: </label>
+             <input type="text"  placeholder="Eg.: XYZ" name="lname">
+             <br><br>
+    
+             <label for="email">Email:     </label>
+             <input type="email" placeholder="Eg.: XYZ@gmail.com" name="email" required>
+             <br><br>
+    
+             <label for="contact no.">Contact No.:</label>
+             <input type="number" id="amount" placeholder="Enter amount" required>
+    
+             <br><br>
+    
+    
+             <center>
+                <input type="button" onclick="alert('THANKS FOR REGISTRATION')"  value="SUBMIT"   id="button">
+             </center>
+    
+    
+            </fieldset>
+           </form>
+    </div>
+
+
+    <footer>
+
+        <div id="outer">
+         Made with &hearts; by 
+         <i>
+           <b>
+             ARYAN JHA
+           </b>
+         </i> 
+ 
+         <br>
+         © since 2025, AJCharity.com
+        </div>
+ 
+        <div id="fbox">
+         <div id="fbox-inner1">
+ 
+           <a href="mailto:ARYAN24006@gmail.com">
+             <br>
+             <b>Contact Me</b>
+           </a>
+         </div>
+ 
+ 
+         <div id="fbox-inner2">
+           <br>
+           <b>Follow us On</b>
+           <br>
+ 
+           <span>
+
+            <a href="https://www.instagram.com/_aryan_jha_05?igsh=cWJxbTkyODY1NXJt" target="_blank">
+              <img src="https://static.vecteezy.com/system/resources/previews/017/743/717/non_2x/instagram-icon-logo-free-png.png"  alt="Instagram"  class="logo">
+            </a>&nbsp;
+
+            <a href="https://github.com/AryanJha05" target="_blank">
+              <img src="https://www.pngmart.com/files/23/Github-Logo-PNG.png" alt="Github" class="logo">
+            </a>&nbsp;
+
+            <a href="https://www.linkedin.com/in/aryan-jha-42b511321?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
+              <img src="https://tse4.mm.bing.net/th?id=OIP.ZKu7K_oqq7FoFwKHizAZHwHaHk&pid=Api&P=0&h=180" alt="Linkedin" class="logo">
+             </a>
+
+          </span>
+ 
+         </div>
+        </div>
+         
+     </footer>
+    
+</body>
+</html>
+
+
+
+
